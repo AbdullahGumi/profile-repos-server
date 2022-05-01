@@ -1,0 +1,53 @@
+Arguments: 
+  C:\Program Files\nodejs\node.exe C:\Program Files (x86)\Yarn\bin\yarn.js start
+
+PATH: 
+  C:\Program Files\Common Files\Oracle\Java\javapath;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files (x86)\Yarn\bin\;C:\Program Files\Git\cmd;C:\Program Files\nodejs\;C:\Program Files\Go\bin;C:\Program Files\Docker\Docker\resources\bin;C:\ProgramData\DockerDesktop\version-bin;C:\TDM-GCC-64\bin;C:\ProgramData\chocolatey\bin;C:\TDM-GCC-64\bin;C:\Users\HP\AppData\Local\Programs\Python\Python38-32\;C:\Users\HP\AppData\Local\Microsoft\WindowsApps;C:\Users\HP\AppData\Local\Yarn\bin;C:\Program Files\heroku\bin;C:\Users\HP\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\HP\AppData\Roaming\npm;C:\Users\HP\go\bin;C:\Program Files\JetBrains\PyCharm Community Edition 2020.1.1\bin;;C:\src\flutter\flutter\bin;C:\Users\HP\miniconda3\Library\bin;C:\Users\HP\miniconda3\Scripts;C:\Users\HP\miniconda3;
+
+Yarn version: 
+  1.22.4
+
+Node version: 
+  16.13.0
+
+Platform: 
+  win32 x64
+
+Trace: 
+  SyntaxError: C:\Users\HP\Documents\projects\github-profile\server\package.json: Unexpected token } in JSON at position 336
+      at JSON.parse (<anonymous>)
+      at C:\Program Files (x86)\Yarn\lib\cli.js:1625:59
+      at Generator.next (<anonymous>)
+      at step (C:\Program Files (x86)\Yarn\lib\cli.js:310:30)
+      at C:\Program Files (x86)\Yarn\lib\cli.js:321:13
+
+npm manifest: 
+  {
+    "name": "server",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "dependencies": {
+      "axios": "^0.27.2",
+      "body-parser": "^1.20.0",
+      "concurrently": "^7.1.0",
+      "dotenv": "^16.0.0",
+      "express": "^4.18.1",
+      "netlify-lambda": "^2.0.15",
+      "nodemon": "^2.0.16",
+      "serverless-http": "^3.0.1",
+    },
+    "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1",
+      "start": "./node_modules/.bin/netlify-lambda serve index.js",
+      "build": "./node_modules/.bin/netlify-lambda build index.js"
+    },
+    "author": "",
+    "license": "ISC"
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
