@@ -13,6 +13,9 @@
     "nodemon": "^2.0.16",
     "serverless-http": "^3.0.1"
   },
+  "devDependencies": {
+    "joi": "^17.6.0"
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "./node_modules/.bin/netlify-lambda serve src",
