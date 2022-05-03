@@ -1,8 +1,7 @@
 const Joi = require("joi");
 const path = require("path");
 
-require("dotenv").config({ path: path.resolve(__dirname, "./.env") });
-
+require("dotenv").config({ path: require("find-config")(".env") });
 const config = {
   client_id: process.env.REACT_APP_CLIENT_ID,
   redirect_uri: process.env.REACT_APP_REDIRECT_URI,
